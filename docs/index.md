@@ -4,10 +4,14 @@ title: home of Ext004
 
 # I am site Ext004
 
-v-011
+v-012
 
-### dump THOSE in myPost WHERE title: "nn001"
-{% assign myPost = site.posts | where: "title", "nn001" %}
+### dump THOSE in myPost WHERE page.id "/2001/01/01/nn001"
+{% assign myPost = site.posts | where: "id", "/2001/01/01/nn001" %}
+{{ myPost }}
+
+### dump THOSE in myPost WHERE title: "nn002"
+{% assign myPost = site.posts | where: "title", "nn002" %}
 {{ myPost }}
 
 
