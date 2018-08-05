@@ -4,7 +4,10 @@ title: home of Ext004
 
 # I am site Ext004
 
-v-012
+v-013
+
+### NO-var dump THOSE in myPost WHERE page.id "/2001/01/01/nn001"
+{% site.posts | where: "id", "/2001/01/01/nn001" %}
 
 ### dump THOSE in myPost WHERE page.id "/2001/01/01/nn001"
 {% assign myPost = site.posts | where: "id", "/2001/01/01/nn001" %}
